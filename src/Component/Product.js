@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+<<<<<<< HEAD
 import { useDispatch } from "react-redux";
 import { add } from "../Store/CartSlice";
 import "./Product.css";
@@ -10,6 +11,12 @@ import "./Product.css";
 const Product = () => {
     //dispatch a add action
     const dispatch=useDispatch()
+=======
+
+import "./Product.css";
+
+const Product = () => {
+>>>>>>> 9003663120ce3ad6d862ed20e9cf34ddeef5666a
   const url = "https://fakestoreapi.com/products";
   const [product, setProducts] = useState([]);
   const fetchData = async () => {
@@ -24,9 +31,12 @@ const Product = () => {
   useEffect(() => {
     fetchData();
   }, []);
+<<<<<<< HEAD
   const addToCart=(product)=>{
     dispatch(add(product))
   }
+=======
+>>>>>>> 9003663120ce3ad6d862ed20e9cf34ddeef5666a
   const cards=product.map(product=>(
     <div className="col-md-3" style={{marginBottom:"10px"}}>
 
@@ -41,7 +51,11 @@ const Product = () => {
         </Card.Text>       
       </Card.Body>
       <Card.Footer>      
+<<<<<<< HEAD
         <Button variant="primary" onClick={()=>addToCart(product)}>Add To Cart</Button>
+=======
+        <Button variant="primary">Add To Cart</Button>
+>>>>>>> 9003663120ce3ad6d862ed20e9cf34ddeef5666a
       </Card.Footer>
     </Card>
     
@@ -59,4 +73,8 @@ const Product = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Product;
+=======
+export default Product;
+>>>>>>> 9003663120ce3ad6d862ed20e9cf34ddeef5666a

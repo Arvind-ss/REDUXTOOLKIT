@@ -9,6 +9,11 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+<<<<<<< HEAD
     /* border: 2px solid red; */
+=======
+    border: 2px solid yellow;
+>>>>>>> 9003663120ce3ad6d862ed20e9cf34ddeef5666a
     height: 100%;
+    
 }
